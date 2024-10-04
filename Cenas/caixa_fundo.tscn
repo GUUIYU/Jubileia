@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://7bwbmvb0kycg"]
+
+[ext_resource type="Texture2D" uid="uid://b6konq6dft1pj" path="res://Sprites/Label/Caixa-Fundo.png" id="1_1u3hw"]
+
+[node name="Caixa-fundo" type="Sprite2D"]
+position = Vector2(648, 621)
+scale = Vector2(3.25, 2)
+texture = ExtResource("1_1u3hw")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = -183.0
+offset_top = -37.0
+offset_right = 180.0
+offset_bottom = 36.0

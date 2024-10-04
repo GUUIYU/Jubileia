@@ -1,0 +1,73 @@
+[gd_scene load_steps=7 format=3 uid="uid://brv8ltp1n5ue3"]
+
+[ext_resource type="Script" path="res://Scripts/Menu/creditos.gd" id="1_1y8xl"]
+
+[sub_resource type="Gradient" id="Gradient_xpa7m"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_avteu"]
+gradient = SubResource("Gradient_xpa7m")
+width = 1280
+height = 720
+fill_from = Vector2(1, 0)
+
+[sub_resource type="Animation" id="Animation_esjls"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-320, 360)]
+}
+
+[sub_resource type="Animation" id="Animation_b12f6"]
+resource_name = "subir"
+length = 10.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-320, 360), Vector2(-320, -360)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ummnn"]
+_data = {
+"RESET": SubResource("Animation_esjls"),
+"subir": SubResource("Animation_b12f6")
+}
+
+[node name="fundo" type="Sprite2D"]
+position = Vector2(640, 360)
+texture = SubResource("GradientTexture2D_avteu")
+script = ExtResource("1_1y8xl")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -320.0
+offset_top = 360.0
+offset_right = 320.0
+offset_bottom = 1360.0
+theme_override_font_sizes/font_size = 26
+text = "Credits
+Game by
+Isadora Oliveira Itapuan do Prado
+Gustavo Jeziel Silveira Fogaça
+Gustavo Rigon do Prado
+Guilherme Machado Campos"
+horizontal_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ummnn")
+}
+autoplay = "subir"

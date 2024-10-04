@@ -1,0 +1,263 @@
+[gd_scene load_steps=15 format=3 uid="uid://dir57c1n63o2j"]
+
+[ext_resource type="Script" path="res://Scripts/template_final.gd" id="1_w07mb"]
+[ext_resource type="Texture2D" uid="uid://cbmm1ao8rcwcf" path="res://Sprites/fundos/restaurante.png" id="2_5j186"]
+[ext_resource type="Texture2D" uid="uid://c5iwtj7r1a8hd" path="res://Sprites/outros/velho.png" id="3_ron8i"]
+[ext_resource type="Texture2D" uid="uid://dwjqep4tmhlwx" path="res://Sprites/Jubileia/conversando2.webp" id="4_y2ahe"]
+[ext_resource type="Texture2D" uid="uid://cce2yp0tr87p4" path="res://Sprites/fundos/lancha.png" id="5_vvgl5"]
+[ext_resource type="Texture2D" uid="uid://b4w3ni0bnogt" path="res://Sprites/Jubileia/chegada5.webp" id="6_mrbhm"]
+
+[sub_resource type="Animation" id="Animation_lya4b"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fundo:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Animação/TextureRect/RichTextLabel:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [""]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureRect:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("imagens/outro:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("imagens/jubileia:texture")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+
+[sub_resource type="Animation" id="Animation_17454"]
+resource_name = "anm1"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fundo:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_5j186")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Animação/TextureRect/RichTextLabel:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": ["", "Jubileia goes out to dinner with Louis and falls in love. She later discovers that Louis is a millionaire who was visiting Paris."]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureRect:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.75),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("imagens/outro:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_ron8i")]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("imagens/jubileia:texture")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("4_y2ahe")]
+}
+
+[sub_resource type="Animation" id="Animation_ggp1h"]
+resource_name = "anm2"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fundo:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("5_vvgl5")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Animação/TextureRect/RichTextLabel:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": ["", "Over time, the two get married and live a happy life traveling the world. And so Jubileia lives a fairy and fancy tale."]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureRect:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("imagens/outro:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_ron8i")]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("imagens/jubileia:texture")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("6_mrbhm")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_at4hv"]
+_data = {
+"RESET": SubResource("Animation_lya4b"),
+"anm1": SubResource("Animation_17454"),
+"anm2": SubResource("Animation_ggp1h")
+}
+
+[sub_resource type="Gradient" id="Gradient_04xn5"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_raemr"]
+gradient = SubResource("Gradient_04xn5")
+fill_from = Vector2(1, 0)
+
+[sub_resource type="Gradient" id="Gradient_jojfu"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_8hhg8"]
+gradient = SubResource("Gradient_jojfu")
+fill_from = Vector2(1, 0)
+
+[node name="template_final" type="Node2D"]
+script = ExtResource("1_w07mb")
+nome = "velho"
+
+[node name="Fundo" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+scale = Vector2(0.643, 0.638)
+
+[node name="imagens" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="outro" type="Sprite2D" parent="imagens"]
+position = Vector2(1000, 330)
+
+[node name="jubileia" type="Sprite2D" parent="imagens"]
+position = Vector2(280, 330)
+
+[node name="Animação" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_at4hv")
+}
+autoplay = "anm1"
+
+[node name="TextureRect" type="TextureRect" parent="Animação"]
+offset_top = 576.0
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = SubResource("GradientTexture2D_raemr")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Animação/TextureRect"]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 1270.0
+offset_bottom = 144.0
+theme_override_font_sizes/normal_font_size = 40
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = SubResource("GradientTexture2D_8hhg8")

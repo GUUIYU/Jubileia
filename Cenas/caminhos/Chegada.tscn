@@ -1,0 +1,438 @@
+[gd_scene load_steps=16 format=3 uid="uid://dn7x3juk3dsig"]
+
+[ext_resource type="Script" path="res://Scripts/template_dialogos.gd" id="1_70iu2"]
+[ext_resource type="PackedScene" uid="uid://cdlla080axyaq" path="res://Cenas/caminhos/ir_primeiro.tscn" id="2_uygrf"]
+[ext_resource type="Texture2D" uid="uid://dwarwcnp1ybng" path="res://Sprites/fundos/chegada.png" id="3_6ddyi"]
+[ext_resource type="PackedScene" uid="uid://7bwbmvb0kycg" path="res://Cenas/caixa_fundo.tscn" id="4_0a2sg"]
+[ext_resource type="Script" path="res://Scripts/cenas/informacao.gd" id="4_j0bvy"]
+[ext_resource type="Texture2D" uid="uid://ev87kk2sdesk" path="res://Sprites/Jubileia/chegada.webp" id="6_eh3k7"]
+[ext_resource type="Texture2D" uid="uid://gdu83ocp5xkd" path="res://Sprites/Jubileia/chegada2.webp" id="7_fnqof"]
+[ext_resource type="Texture2D" uid="uid://c5kydrb78b830" path="res://Sprites/Jubileia/chegada3.webp" id="8_g5r1y"]
+
+[sub_resource type="Animation" id="Animation_hknmd"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("conversa/Caixa-fundo/RichTextLabel:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [""]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("conversa/jubileia:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("conversa/outro:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("conversa/Caixa-fundo/botões:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Label:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_wbun4"]
+resource_name = "anm1"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("conversa/Caixa-fundo/RichTextLabel:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": ["", "Ugh... I finally arrived, after 12 hours of flight I no longer feel anything bellow my waist."]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("conversa/jubileia:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("6_eh3k7")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("conversa/outro:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("conversa/Caixa-fundo/botões:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Label:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_iagoc"]
+resource_name = "anm2"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("conversa/Caixa-fundo/RichTextLabel:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": ["", "I'm not really sure where things are here, should I ask for help?
+"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("conversa/jubileia:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("6_eh3k7")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("conversa/outro:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("conversa/Caixa-fundo/botões:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Label:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_j7mn3"]
+resource_name = "anm3"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("conversa/Caixa-fundo/RichTextLabel:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": ["", ""]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("conversa/jubileia:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("6_eh3k7")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("conversa/outro:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("conversa/Caixa-fundo/botões:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_qmg1r"]
+resource_name = "bnm1"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("conversa/Caixa-fundo/RichTextLabel:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": ["", "You know what? I think I can find out, it may be easy to find your way around a tourist city."]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("conversa/jubileia:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("7_fnqof")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("conversa/outro:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("conversa/Caixa-fundo/botões:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_a0h4u"]
+resource_name = "cnm1"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("conversa/Caixa-fundo/RichTextLabel:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": ["", "Well I think I'll ask for information at the airport reception."]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("conversa/jubileia:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("8_g5r1y")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("conversa/outro:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("conversa/Caixa-fundo/botões:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_r6jd2"]
+_data = {
+"RESET": SubResource("Animation_hknmd"),
+"anm1": SubResource("Animation_wbun4"),
+"anm2": SubResource("Animation_iagoc"),
+"anm3": SubResource("Animation_j7mn3"),
+"bnm1": SubResource("Animation_qmg1r"),
+"cnm1": SubResource("Animation_a0h4u")
+}
+
+[node name="template_cena" type="Node2D"]
+script = ExtResource("1_70iu2")
+fcima = ExtResource("2_uygrf")
+fbaixo = ExtResource("2_uygrf")
+
+[node name="fundo" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+scale = Vector2(0.64257, 0.638298)
+texture = ExtResource("3_6ddyi")
+
+[node name="conversa" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+
+[node name="jubileia" type="Sprite2D" parent="conversa"]
+position = Vector2(280, 300)
+
+[node name="outro" type="Sprite2D" parent="conversa"]
+
+[node name="Caixa-fundo" parent="conversa" instance=ExtResource("4_0a2sg")]
+
+[node name="botões" type="Control" parent="conversa/Caixa-fundo"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("4_j0bvy")
+
+[node name="cima" type="Button" parent="conversa/Caixa-fundo/botões"]
+layout_mode = 0
+offset_left = -183.0
+offset_top = -37.0
+offset_right = 180.0
+offset_bottom = -1.0
+text = "Yes"
+
+[node name="baixo" type="Button" parent="conversa/Caixa-fundo/botões"]
+layout_mode = 0
+offset_left = -183.0
+offset_top = 1.0
+offset_right = 180.0
+offset_bottom = 37.0
+text = "No"
+
+[node name="Animação" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_r6jd2")
+}
+autoplay = "anm1"
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(1, 0.0823529, 0.184314, 1)
+offset_top = 20.0
+offset_right = 1280.0
+offset_bottom = 108.0
+theme_override_font_sizes/font_size = 29
+text = "(Press space to go to the next)"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="conversa/Caixa-fundo/botões/cima" to="." method="_on_cima_pressed"]
+[connection signal="pressed" from="conversa/Caixa-fundo/botões/cima" to="conversa/Caixa-fundo/botões" method="_on_cima_pressed"]
+[connection signal="pressed" from="conversa/Caixa-fundo/botões/baixo" to="." method="_on_baixo_pressed"]
+[connection signal="pressed" from="conversa/Caixa-fundo/botões/baixo" to="conversa/Caixa-fundo/botões" method="_on_baixo_pressed"]
+
+[editable path="conversa/Caixa-fundo"]

@@ -1,0 +1,153 @@
+[gd_scene load_steps=11 format=3 uid="uid://b75rsea4vefm2"]
+
+[ext_resource type="Script" path="res://Scripts/Menu/menu.gd" id="1_51pyn"]
+[ext_resource type="Texture2D" uid="uid://c55r8pgca6xrr" path="res://Sprites/Menu/menu.png" id="2_jhtp2"]
+[ext_resource type="Texture2D" uid="uid://vb15uokey4rn" path="res://Sprites/Menu/quadro.png" id="3_2muod"]
+[ext_resource type="Texture2D" uid="uid://dbwyi4kcewfpn" path="res://Sprites/fundos/favela.png" id="4_x3458"]
+[ext_resource type="Texture2D" uid="uid://dq7j2pfi2sgm3" path="res://Sprites/fundos/hotel.png" id="5_7ux7w"]
+[ext_resource type="Texture2D" uid="uid://cce2yp0tr87p4" path="res://Sprites/fundos/lancha.png" id="6_0qy2s"]
+[ext_resource type="Texture2D" uid="uid://djva3dlsawurq" path="res://Sprites/fundos/empresaria.png" id="7_kg7h6"]
+[ext_resource type="Texture2D" uid="uid://bjj1y77hb25bg" path="res://Sprites/fundos/aviao.png" id="8_hh3hn"]
+
+[sub_resource type="Gradient" id="Gradient_bo4s2"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_7uj0r"]
+gradient = SubResource("Gradient_bo4s2")
+width = 250
+height = 120
+fill_from = Vector2(1, 0)
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_51pyn")
+
+[node name="Background-menu" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+scale = Vector2(1.25, 0.703125)
+texture = ExtResource("2_jhtp2")
+
+[node name="quadro" type="Sprite2D" parent="."]
+position = Vector2(650.25, 172)
+scale = Vector2(1.47743, 1.02516)
+texture = ExtResource("3_2muod")
+
+[node name="finais" type="Control" parent="quadro"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="mendiga" type="Sprite2D" parent="quadro/finais"]
+visible = false
+position = Vector2(-157.875, -108.276)
+scale = Vector2(0.0427183, 0.0572954)
+texture = ExtResource("4_x3458")
+
+[node name="mendiga2" type="Sprite2D" parent="quadro/finais"]
+visible = false
+position = Vector2(-144.338, -94.6194)
+scale = Vector2(0.0427183, 0.0572954)
+texture = ExtResource("4_x3458")
+
+[node name="encalhada" type="Sprite2D" parent="quadro/finais"]
+visible = false
+position = Vector2(-153.814, 12.6809)
+scale = Vector2(0.0427183, 0.0572954)
+texture = ExtResource("5_7ux7w")
+
+[node name="velho" type="Sprite2D" parent="quadro/finais"]
+visible = false
+position = Vector2(-148.4, 102.423)
+scale = Vector2(0.0427183, 0.0572954)
+texture = ExtResource("6_0qy2s")
+
+[node name="empresaria" type="Sprite2D" parent="quadro/finais"]
+visible = false
+position = Vector2(-52.2867, -102.423)
+scale = Vector2(0.0427183, 0.0572954)
+texture = ExtResource("7_kg7h6")
+
+[node name="desaparece" type="Sprite2D" parent="quadro/finais"]
+visible = false
+position = Vector2(41.1187, -102.423)
+scale = Vector2(0.0427183, 0.0572954)
+texture = ExtResource("8_hh3hn")
+
+[node name="presa" type="Sprite2D" parent="quadro/finais"]
+visible = false
+position = Vector2(-157.875, -108.276)
+scale = Vector2(0.0427183, 0.0572954)
+
+[node name="gay" type="Sprite2D" parent="quadro/finais"]
+visible = false
+position = Vector2(-157.875, -108.276)
+scale = Vector2(0.0427183, 0.0572954)
+
+[node name="luta" type="Sprite2D" parent="quadro/finais"]
+visible = false
+position = Vector2(-157.875, -108.276)
+scale = Vector2(0.0427183, 0.0572954)
+
+[node name="vendida" type="Sprite2D" parent="quadro/finais"]
+visible = false
+position = Vector2(-157.875, -108.276)
+scale = Vector2(0.0427183, 0.0572954)
+
+[node name="vende" type="Sprite2D" parent="quadro/finais"]
+visible = false
+position = Vector2(-157.875, -108.276)
+scale = Vector2(0.0427183, 0.0572954)
+
+[node name="Botão" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Play" type="Button" parent="Botão"]
+layout_mode = 0
+offset_left = 1001.0
+offset_top = 160.0
+offset_right = 1259.0
+offset_bottom = 288.0
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+text = "PLAY
+"
+icon = SubResource("GradientTexture2D_7uj0r")
+flat = true
+icon_alignment = 1
+
+[node name="Sair" type="Button" parent="Botão"]
+layout_mode = 0
+offset_left = 1001.0
+offset_top = 571.0
+offset_right = 1259.0
+offset_bottom = 699.0
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+text = "Sair"
+icon = SubResource("GradientTexture2D_7uj0r")
+flat = true
+icon_alignment = 1
+
+[node name="Créditos" type="Button" parent="Botão"]
+layout_mode = 0
+offset_left = 1001.0
+offset_top = 329.0
+offset_right = 1259.0
+offset_bottom = 457.0
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+text = "Créditos
+"
+icon = SubResource("GradientTexture2D_7uj0r")
+flat = true
+icon_alignment = 1
+
+[node name="teste" type="Label" parent="."]
+offset_left = 394.0
+offset_top = 232.0
+offset_right = 434.0
+offset_bottom = 255.0
+
+[connection signal="pressed" from="Botão/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Botão/Sair" to="." method="_on_sair_pressed"]
+[connection signal="pressed" from="Botão/Créditos" to="." method="_on_créditos_pressed"]
